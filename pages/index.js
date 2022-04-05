@@ -1,18 +1,19 @@
-//our-domain.com/news
-// import Nav from 'react-bootstrap/Nav'
-import "../node_modules/bootstrap/dist/css/bootstrap.min.css";
+import React from 'react'
+import Layout from '../Layouts/Layout'
+import Login from './Login'
+import { Routes, Route} from 'react-router-dom'
+import Header from './components/Layout/Header'
+import HeroSection from './components/Layout/HeroSection'
+import AboutUs from './components/Layout/AboutUs'
 
-<head>
-    <style>
-    @import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@300&display=swap');
-    </style>
-</head>
-const Index = () => (
+const index = () => {
+  return (
     <>
-    <div>
-        <h1 className="text-center pt-4 web-title">bro.di</h1>
-    </div>
+    <Header/>
+    <HeroSection/>
+    <AboutUs/>
     </>
-)
+  )
+}
 
-export default Index;
+export default index
