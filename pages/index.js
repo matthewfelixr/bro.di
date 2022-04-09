@@ -5,6 +5,7 @@ import { Routes, Route} from 'react-router-dom'
 import Header from './components/Layout/Header'
 import HeroSection from './components/Layout/HeroSection'
 import AboutUs from './components/Layout/AboutUs'
+import Footer from './components/Layout/Footer'
 
 const index = () => {
   return (
@@ -12,6 +13,7 @@ const index = () => {
     <Header/>
     <HeroSection/>
     <AboutUs/>
+    <Footer/>
     </>
   )
 }

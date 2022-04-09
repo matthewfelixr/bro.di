@@ -142,3 +142,42 @@
     margin-bottom: 40px;
     height: 40rem;
 }
+
+.footer {
+    height: 450px;
+    background: #781D42;
+    display: flex;
+}
+.footer_container {
+    width: 100vw;
+    margin-left: 130px;
+    margin-top: 80px;
+    margin-bottom: 80px;
+    margin-right: 130px;
+    display: flex;
+    justify-content: center;
+}
+.tagline {
+    margin-right: 80px;
+}
+.tagline p{
+    color: #FFFFFF;
+}
+.sub_footer {
+    margin-left: 80px;
+}
+.footer_container h1{
+    color: #FFFFFF;
+    font-weight: bolder;
+}
+.footer_container h4{
+    color: #FFFFFF;
+    font-weight: bolder;
+    margin-bottom: 30px;
+}
+.sub_footer p{
+    color: #CF4F83;
+}
+.credit {
+    margin-top: 80%;
+}
