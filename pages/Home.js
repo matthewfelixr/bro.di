@@ -3,7 +3,7 @@ import Layout from '../Layouts/Layout'
 import AboutUs from './components/Layout/AboutUs'
 import HeroSection from './components/Layout/HeroSection'
 
-const index = () => {
+const Home = (props) => {
   return (
     <Layout>
         <HeroSection/>
@@ -12,4 +12,4 @@ const index = () => {
   )
 }
 
-export default index
+export default Home

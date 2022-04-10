@@ -10,7 +10,14 @@
     color: white;
 }
 
+.body {
+    position: absolute;
+    width: 100vw;
+    height: fit-content;
+    background-size:contain;
+    background-image: url(../../../public/bg_vector.png);
 
+}
 .btn_login{
     align-items: center;
     justify-content: center;
@@ -40,12 +47,46 @@
 .login_container {
     display: block;
     justify-content: center;
-    padding-top: 100px;
-    width: 30%;
-    height: 30%;
-    margin: auto;
-}
+    width: 550px;
+    height: 600px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 157px;
+    margin-bottom: 167px;
 
+
+    background: #FFFFFF;
+    /* Button Drop Shadow */
+
+    box-shadow: 0px 5px 30px rgba(0, 0, 0, 0.35);
+    border-radius: 25px;
+}
+.register_container {
+    display: block;
+    justify-content: center;
+    width: 550px;
+    height: 750px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 157px;
+    margin-bottom: 167px;
+
+
+    background: #FFFFFF;
+    /* Button Drop Shadow */
+
+    box-shadow: 0px 5px 30px rgba(0, 0, 0, 0.35);
+    border-radius: 25px;
+}
+.form_container{
+    padding: 30px;
+}
+.form_title {
+    background: #781D42;
+    color: white;
+    padding:  25px 0;
+    border-radius: 25px 25px 0px 0px;
+}
 .form_label{
     font-weight: bold;
     font-size: 20px;
@@ -59,29 +100,36 @@
 .forgot_password:hover {
     cursor: pointer;
 }
-.btn_sub_login{
+.button_sub_login{
     align-items: center;
     justify-content: center;
-    height: 40px;
+    height: 50px;
     font-size: 18px;
     color: white;
     background-color: #781D42;
     border-radius: 38px;
     text-align: center;
-    padding-top: 5px
+    padding-top: 5px;
+    width: 430px;
+    margin: auto;
+    margin-bottom: 10px;
+    border: unset;
+    border: #781D42 2px;
 }
 
-.btn_sub_signup{
+.button_sub_signup{
     align-items: center;
     justify-content: center;
-    height: 40px;
+    height: 50px;
     font-size: 18px;
     color: #781D42;
     background-color: white;
-    border: 1px solid;
+    border: 2px solid;
     border-radius: 38px;
     text-align: center;
     padding-top: 5px;
+    width: 430px;
+    margin: auto;
 }
 
 .row_hero{
@@ -94,14 +142,13 @@
 }
 .hero_image{
     left: 150px;
-    position: absolute;
     width: fit-content;
     margin-left: auto;
     margin-right: auto;
     
 }
 .hero_container{
-    left: 240px;
+    right: 340px;
     top: 100px;
     position: relative;
     text-align: end;
@@ -121,6 +168,25 @@
     font-size: 24px;
 }
 
+.col_about {
+    align-items: center;
+    color: #781D42;
+    padding:  200px 0;
+    margin-left: 10rem;
+}
+.col_about h1{
+
+    font-weight: bolder;
+    font-size: 96px;
+}
+
+.col_about p{
+    width: 80%;
+    font-weight: bold;
+    color: #781D42;
+    font-size: 24px;
+}
+.col_about button,
 .hero_container button{
     align-items: center;
     justify-content: center;
@@ -139,18 +205,23 @@
     max-width: 110rem;
     margin-left: auto;
     margin-right: auto;
-    margin-bottom: 40px;
     height: 40rem;
 }
 
+.about_image{
+    width: 100%;
+    margin-left: 40rem;
+    ;
+}
 .footer {
+    position: relative;
+    bottom: 0%;
     height: 450px;
     background: #781D42;
     display: flex;
 }
 .footer_container {
     width: 100vw;
-    margin-left: 130px;
     margin-top: 80px;
     margin-bottom: 80px;
     margin-right: 130px;

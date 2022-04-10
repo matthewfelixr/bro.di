@@ -8,8 +8,8 @@ import Link from 'next/link'
 const HeroSection = (props) => {
   return (
     <>
-    <div className={style.row_hero}>
-        <div className={style.hero_image}>
+    <div className={`${style.row_hero} ${"d-flex"}`}>
+        <div className={`${style.hero_image} ${"col-6"}`}>
             <Image
             src={Heropic}
             alt="Hero Image"
@@ -17,7 +17,7 @@ const HeroSection = (props) => {
             height={666}
         />
         </div>
-        <div className={style.hero_container}>
+        <div className={`${style.hero_container} ${"col-6"}`}>
             <h1> Take Your Seats</h1>
             <p>in bro.di you can book everywhere everytime!</p>
             <button> <Link href="/login"> Get Started</Link></button>
