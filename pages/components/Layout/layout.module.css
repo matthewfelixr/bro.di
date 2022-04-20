@@ -4,10 +4,25 @@
     display: flex;
     align-items: center;
 }
+
+.navigation_searchbar input {
+    margin-left: 50px;
+    width: 520px;
+    height: 40px;
+    border-radius: 41px;
+    border: none;
+}
 .navigation_brand {
     font-size: 48px;
     font-weight: bolder;
     color: white;
+}
+
+.navigation_button {
+    font-weight: 700;
+    height: 100%;
+    color: white;
+    margin-left: 50px;
 }
 
 .body {
@@ -131,7 +146,7 @@
     width: 430px;
     margin: auto;
 }
-
+/* Hero Section CSS */
 .row_hero{
     margin-top: 80px;
     max-width: 110rem;
@@ -141,7 +156,7 @@
     height: 40rem;
 }
 .hero_image{
-    left: 150px;
+    offset: 2;
     width: fit-content;
     margin-left: auto;
     margin-right: auto;
@@ -168,6 +183,8 @@
     font-size: 24px;
 }
 
+
+/* About Us CSS */
 .col_about {
     align-items: center;
     color: #781D42;
@@ -213,6 +230,40 @@
     margin-left: 40rem;
     ;
 }
+
+
+
+/* Card Short */
+
+.card_short{
+
+    width: 350px;
+    height: 250px;
+    background: #FFFFFF;
+    /* Button Drop Shadow */
+
+    box-shadow: 0px 5px 30px rgba(0, 0, 0, 0.35);
+    border-radius: 25px;
+}
+    .card_short:hover {
+        transform: scale(1.1);
+        transition: 200ms;
+    }
+.card_short_image{
+    height: 170px;
+
+}
+.card_short_description{
+    padding:10px 15px;
+    background-color: #781D42;
+    width: 100%;
+    color: white;
+    height: 80px;
+    bottom: 100%;
+    border-radius: 0px 0px 25px 25px;
+}
+
+/* Footer CSS */
 .footer {
     position: relative;
     bottom: 0%;

@@ -9,7 +9,8 @@ const HeroSection = (props) => {
   return (
     <>
     <div className={`${style.row_hero} ${"d-flex"}`}>
-        <div className={`${style.hero_image} ${"col-6"}`}>
+        <div className='col-1'></div>
+        <div className={`${style.hero_image} ${"col-5"}`}>
             <Image
             src={Heropic}
             alt="Hero Image"
@@ -17,7 +18,7 @@ const HeroSection = (props) => {
             height={666}
         />
         </div>
-        <div className={`${style.hero_container} ${"col-6"}`}>
+        <div className={`${style.hero_container} ${"col-4"}`}>
             <h1> Take Your Seats</h1>
             <p>in bro.di you can book everywhere everytime!</p>
             <button> <Link href="/login"> Get Started</Link></button>
