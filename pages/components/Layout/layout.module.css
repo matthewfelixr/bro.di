@@ -303,3 +303,9 @@
 .credit {
     margin-top: 80%;
 }
+
+.header_carousel {
+    margin-left : auto;
+    margin-right: auto;
+    width: 1440px;
+}

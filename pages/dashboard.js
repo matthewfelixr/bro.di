@@ -1,11 +1,12 @@
 import React from 'react'
-import { Nav } from 'react-bootstrap'
 import Navigation from './components/Layout/Navigation'
 import RestoCard from './components/Layout/RestoCard'
+import HeaderCarousel from './components/Layout/HeaderCarousel'
 const Dashboard = () => {
   return (
     <>
     <Navigation/>
+    <HeaderCarousel/>
     <br></br>
     <br></br>
     <br></br>
