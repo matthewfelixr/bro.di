@@ -3,7 +3,7 @@ import Layout from '../Layouts/Layout'
 import AboutUs from './components/Layout/AboutUs'
 import HeroSection from './components/Layout/HeroSection'
 import MitraKami from './components/Layout/MitraKami'
-import 'bootstrap/dist/css/bootstrap.min.css';    
+// import 'bootstrap/dist/css/bootstrap.min.css';    
 
 
 const index = () => {

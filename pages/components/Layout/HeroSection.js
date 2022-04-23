@@ -21,7 +21,7 @@ const HeroSection = (props) => {
         <div className={`${style.hero_container} ${"col-4"}`}>
             <h1> Take Your Seats</h1>
             <p>in bro.di you can book everywhere everytime!</p>
-            <button> <Link href="/login"> Get Started</Link></button>
+            <Link href="/login"><button>Get Started</button></Link>
         </div>
     </div>
     </>

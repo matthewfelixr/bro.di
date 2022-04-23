@@ -363,4 +363,37 @@ grid-column : 3/5 ;
 .item {
     gap: 0px;
     /* font-family: Arial, Helvetica, sans-serif; */
-   }
+}
+
+/* Success Page */
+.success_container {
+    display: block;
+    justify-content: center;
+    width: 600px;
+    height: 580px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 150px;
+    margin-bottom: 150px;
+}
+.success_container p {
+    align-items: center;
+    text-align: center;
+    font-size: 36px;
+}
+.button_next_success {
+    align-items: center;
+    justify-content: center;
+    height: 50px;
+    font-size: 18px;
+    color: white;
+    background-color: #781D42;
+    border-radius: 38px;
+    text-align: center;
+    padding-top: 5px;
+    width: 600px;
+    margin: auto;
+    margin-bottom: 10px;
+    border: unset;
+    border: #781D42 2px;
+}
