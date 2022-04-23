@@ -304,10 +304,16 @@
     margin-top: 80%;
 }
 /* Header Carrosel*/
-.header_carousel {
-    margin-left : auto;
+.header_carousel_container{
+    width: 1520px !important;
+    margin-left: auto;
     margin-right: auto;
-    width: 1440px;
+}
+.carousel-indicators{
+    visibility: hidden;
+}
+.carousel-item{
+    width: 100%;
 }
 
 .mitra_title{
@@ -342,3 +348,19 @@ grid-column : 3/5 ;
 .item4 {
 grid-column : 3/5 ;
 }
+
+/* owl */
+.owl_title{
+    font-weight: 700 !important;
+    color: #781D42;
+    margin-left: 0;
+    margin-right: 0;
+    font-size: 40px;
+}
+.owl_container{
+    width :1520px !important;
+}
+.item {
+    gap: 0px;
+    /* font-family: Arial, Helvetica, sans-serif; */
+   }

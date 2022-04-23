@@ -9,11 +9,13 @@ import style from './layout.module.css'
 const HeaderCarousel = () => {
   return (
     <>
+      <div className={style.header_carousel_container}>
       <Carousel>
         <Carousel.Item>
           <Image
-            className={style.header_carousel} 
+            className={style.header_carousel}
             src={Carouselpic1}
+            width={1520}
             alt="First slide"
           />
           <Carousel.Caption>
@@ -25,6 +27,7 @@ const HeaderCarousel = () => {
           <Image
             className={style.header_carousel}
             src={Carouselpic2}
+            width={1520}
             alt="Second slide"
           />
 
@@ -37,6 +40,7 @@ const HeaderCarousel = () => {
           <Image
             className={style.header_carousel}
             src={Carouselpic3}
+            width={1520}
             alt="Third slide"
           />
 
@@ -45,6 +49,7 @@ const HeaderCarousel = () => {
           </Carousel.Caption>
         </Carousel.Item>
       </Carousel>
+      </div>
     </>
   )
 }
