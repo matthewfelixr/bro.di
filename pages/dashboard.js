@@ -4,7 +4,7 @@ import HeaderCarousel from './components/Layout/HeaderCarousel'
 import Navigation from './components/Layout/Navigation'
 import RestoCard from './components/Layout/RestoCard'
 import dynamic from "next/dynamic";
-import Reccomended from './components/Layout/Reccomended'
+import Recommended from './components/Layout/Recommended'
 
 const Dashboard = () => {
   const OwlCarousel = dynamic(() => import("react-owl-carousel"), {
@@ -22,7 +22,7 @@ const Dashboard = () => {
       <RestoCard/>
       <RestoCard/>
     </div>
-    <Reccomended/>
+    <Recommended/>
     
     </>
   )

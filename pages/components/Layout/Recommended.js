@@ -5,7 +5,7 @@ import "owl.carousel/dist/assets/owl.carousel.css";
 import "owl.carousel/dist/assets/owl.theme.default.css";
 import RestoCard from './RestoCard';
 
-const Reccomended = () => {
+const Recommended = () => {
     const OwlCarousel = dynamic(() => import("react-owl-carousel"), {
         ssr: false,
       });
@@ -37,4 +37,4 @@ const Reccomended = () => {
   )
 }
 
-export default Reccomended
+export default Recommended
