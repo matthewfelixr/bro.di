@@ -5,6 +5,7 @@ import Navigation from './components/Layout/Navigation'
 import RestoCard from './components/Layout/RestoCard'
 import dynamic from "next/dynamic";
 import Recommended from './components/Layout/Recommended'
+import RestoranGrid from './components/Layout/RestoranGrid'
 
 const Dashboard = () => {
   const OwlCarousel = dynamic(() => import("react-owl-carousel"), {
@@ -17,11 +18,7 @@ const Dashboard = () => {
     <br></br>
     <br></br>
     <br></br>
-    <div className='container d-flex'>
-      <RestoCard/>
-      <RestoCard/>
-      <RestoCard/>
-    </div>
+    <RestoranGrid/>
     <Recommended/>
     
     </>
