@@ -397,3 +397,51 @@ grid-column : 3/5 ;
     border: unset;
     border: #781D42 2px;
 }
+
+/* Profile Page */
+.profile_container {
+    display: block;
+    justify-content: center;
+    width: 550px;
+    height: 530px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 157px;
+    margin-bottom: 167px;
+
+
+    background: #FFFFFF;
+    /* Button Drop Shadow */
+
+    box-shadow: 0px 5px 30px rgba(0, 0, 0, 0.35);
+    border-radius: 25px;
+}
+.button_sub_profile{
+    align-items: center;
+    justify-content: center;
+    height: 50px;
+    font-size: 18px;
+    color: white;
+    background-color: #781D42;
+    border-radius: 38px;
+    text-align: center;
+    padding-top: 5px;
+    width: 430px;
+    margin: auto;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    border: unset;
+    border: #781D42 2px;
+}
+
+/* Search Page */
+.search_header {
+    margin-left: 10rem;
+    margin-right: 10rem;
+    margin-top: 3rem;
+    margin-bottom: 3rem;
+}
+.search_header h1 {
+    font-weight: bold;
+    color: #781D42;
+}
