@@ -436,12 +436,49 @@ grid-column : 3/5 ;
 
 /* Search Page */
 .search_header {
-    margin-left: 10rem;
-    margin-right: 10rem;
+    text-align: center;
     margin-top: 3rem;
-    margin-bottom: 3rem;
 }
 .search_header h1 {
     font-weight: bold;
     color: #781D42;
+}
+
+/* Resto Search Card */
+.card_search_container {
+    margin-bottom: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.row_card_search {
+    width: 1180px;
+    height: 250px;
+    background: #FFFFFF;
+    box-shadow: 0px 5px 30px rgba(0, 0, 0, 0.35);
+    border-radius: 25px;
+}
+.col_search_image {
+    background: #C4C4C4;
+    border-radius: 25px 0px 0px 25px;
+}
+.card_search_description {
+    margin-top: 22px;
+    margin-bottom: 22px;
+    margin-left: 35px;
+    height: 150px;
+}
+.card_search_description h1 {
+    font-weight: bold;
+}
+.card_search_visit {
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 780px;
+    background: #781D42;
+    
+    font-size: 24px;
+    font-weight: bold;
+    color: #ffffff;
+    border-radius: 0px 0px 25px 0px;
 }

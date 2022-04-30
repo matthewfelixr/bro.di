@@ -13,12 +13,12 @@ const AboutUs = () => {
                 <Link href="/"><button>About Us</button></Link>
             </div>
             <div className={`${style.col_about_image} ${"col-6"}`}>
-            <Image
-            src={Heropic}
-            alt="Hero Image"
-            width={500}
-            height={500}
-        />
+                <Image
+                    src={Heropic}
+                    alt="Hero Image"
+                    width={500}
+                    height={500}
+                />
             </div>
         </div>
         </>
