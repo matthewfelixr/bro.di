@@ -6,6 +6,7 @@ import RestoCard from './components/Layout/RestoCard'
 import dynamic from "next/dynamic";
 import Recommended from './components/Layout/Recommended'
 import RestoranGrid from './components/Layout/RestoranGrid'
+import LayoutAuth from '../Layouts/LayoutAuth'
 
 const Dashboard = () => {
   const OwlCarousel = dynamic(() => import("react-owl-carousel"), {
@@ -13,13 +14,14 @@ const Dashboard = () => {
   });
   return (
     <>
-    <Navigation/>
+    <LayoutAuth>
     <HeaderCarousel/>
     <br></br>
     <br></br>
     <br></br>
     <RestoranGrid/>
     <Recommended/>
+    </LayoutAuth>
     
     </>
   )

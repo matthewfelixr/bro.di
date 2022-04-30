@@ -20,3 +20,6 @@ a:hover{
   text-decoration: unset !important ;
   border: inherit;
 }
+button{
+  border: none;
+}

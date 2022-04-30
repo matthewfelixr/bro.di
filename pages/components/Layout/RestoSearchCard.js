@@ -1,6 +1,8 @@
 import React from 'react'
 import Link from 'next/link'
 import  style from './layout.module.css'
+import Image from 'next/image'
+import Rating from  '../../../public/rating.png'
 
 const RestoSearchCard = () => {
   return (
@@ -16,7 +18,12 @@ const RestoSearchCard = () => {
                         <h1>Solaria Buah Batu</h1>
                         <h4>Bandung, Jawa Barat</h4>
                         <br></br>
-                        <span>*****</span>
+                        <Image
+                            src={Rating}
+                            alt="Rating"
+                            width={120}
+                            height={19}
+                        /> <span className={style.disabled_text}> Indonesian </span>
                     </div>
                     <div className={style.card_search_visit}>
                         Visit
