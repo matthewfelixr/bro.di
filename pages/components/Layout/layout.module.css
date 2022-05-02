@@ -528,3 +528,109 @@ grid-column : 3/5 ;
     background-color: #781D42;
     border-radius: 0px 25px 25px 0px;
 }
+
+/* Booking Page */
+.booking_container {
+    display: block;
+    justify-content: center;
+    width: 550px;
+    height: 720px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 157px;
+    margin-bottom: 167px;
+
+
+    background: #FFFFFF;
+    /* Button Drop Shadow */
+
+    box-shadow: 0px 5px 30px rgba(0, 0, 0, 0.35);
+    border-radius: 25px;
+}
+.button_sub_book{
+    align-items: center;
+    justify-content: center;
+    height: 50px;
+    font-size: 18px;
+    color: white;
+    background-color: #781D42;
+    border-radius: 38px;
+    text-align: center;
+    padding-top: 5px;
+    width: 430px;
+    margin: auto;
+    margin-top: 20px;
+    margin-bottom: 10px;
+    border: unset;
+    border: #781D42 2px;
+}
+.button_sub_back{
+    align-items: center;
+    justify-content: center;
+    height: 50px;
+    font-size: 18px;
+    color: #781D42;
+    background-color: white;
+    border: 2px solid;
+    border-radius: 38px;
+    text-align: center;
+    padding-top: 5px;
+    width: 430px;
+    margin: auto;
+}
+
+/* Bill Page */
+.bill_container {
+    display: block;
+    justify-content: center;
+    width: 550px;
+    height: 740px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 100px;
+    margin-bottom: 20px;
+
+
+    background: #FFFFFF;
+    /* Button Drop Shadow */
+
+    box-shadow: 0px 5px 30px rgba(0, 0, 0, 0.35);
+    border-radius: 25px;
+}
+.form_label_bill{
+    color: #781D42;
+    font-weight: bold;
+    font-size: 24px;
+}
+.button_sub_confirm{
+    align-items: center;
+    justify-content: center;
+    height: 50px;
+    font-size: 18px;
+    color: white;
+    background-color: #781D42;
+    border-radius: 38px;
+    text-align: center;
+    padding-top: 5px;
+    width: 550px;
+    margin: auto;
+    margin-top: 20px;
+    margin-bottom: 10px;
+    border: unset;
+    border: #781D42 2px;
+}
+.button_sub_cancel{
+    align-items: center;
+    justify-content: center;
+    height: 50px;
+    font-size: 18px;
+    color: #781D42;
+    background-color: white;
+    border: 2px solid;
+    border-radius: 38px;
+    text-align: center;
+    padding-top: 5px;
+    width: 550px;
+    margin: auto;
+    margin-bottom: 100px;
+}

@@ -12,7 +12,7 @@ const RestoSearchCard = () => {
                 <div className={`${style.col_search_image} ${"col-3"}`}>
 
                 </div>
-                <Link href="/dashboard">
+                
                 <div className={`${style.col_search_description} ${"col-9"}`}>
                     <div className={style.card_search_description}>
                         <h1>Solaria Buah Batu</h1>
@@ -25,11 +25,13 @@ const RestoSearchCard = () => {
                             height={19}
                         /> <span className={style.disabled_text}> Indonesian </span>
                     </div>
+                    <Link href="/dashboard">
                     <div className={style.card_search_visit}>
                         Visit
                     </div>
+                    </Link>
                 </div>
-                </Link>
+                
             </div>
         </div>          
     </>
