@@ -22,16 +22,20 @@ const bill = () => {
                     <h4>25 February 2022</h4>
                 </Form.Group>
 
-                <Form.Group className="mb-4 px-5" controlId="formBasicName">
+                <div className='row'>
+                    <div className='col'>
+                    <Form.Group className="mb-4 px-5" controlId="formBasicName">
                     <Form.Label className={style.form_label_bill}>Start Hour</Form.Label>
-                    <h4>15:00</h4>
-                </Form.Group>
-
-                <Form.Group className="mb-4 px-5" controlId="formBasicName">
+                        <h4>15:00</h4>
+                    </Form.Group>
+                    </div>
+                    <div className='col'>
+                    <Form.Group className="mb-4 px-5" controlId="formBasicName">
                     <Form.Label className={style.form_label_bill}>End Hour</Form.Label>
-                    <h4>16:00</h4>
-                </Form.Group>
-
+                        <h4>16:00</h4>
+                    </Form.Group>
+                    </div>
+                </div>
                 <Form.Group className="mb-4 px-5" controlId="formBasicName">
                     <Form.Label className={style.form_label_bill}>Quantity</Form.Label>
                     <h4>4</h4>

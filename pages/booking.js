@@ -16,20 +16,25 @@ const booking = () => {
                     <Form.Label className={style.form_label}>Date</Form.Label>
                     <Form.Control type="date" placeholder="Input your date" />
                 </Form.Group>
-
-                <Form.Group className="mb-4 px-5" controlId="formBasicEmail">
-                    <Form.Label className={style.form_label}>Start Hours</Form.Label>
-                    <Form.Control type="time"/>
-                </Form.Group>
-
-                <Form.Group className="mb-4 px-5" controlId="formBasicEmail">
-                    <Form.Label className={style.form_label}>End Hours</Form.Label>
-                    <Form.Control type="time"/>
-                </Form.Group>
-        
+                
+                <div className='row d-flex'>
+                    <div className='col-6'>
+                        <Form.Group className="mb-4 px-5" controlId="formBasicEmail">
+                            <Form.Label className={style.form_label}>Start Hours</Form.Label>
+                            <Form.Control type="time"/>
+                        </Form.Group>
+                    </div>
+                    <div className='col-6'>
+                        <Form.Group className="mb-4 px-5" controlId="formBasicEmail">
+                            <Form.Label className={style.form_label}>End Hours</Form.Label>
+                            <Form.Control type="time"/>
+                        </Form.Group>
+                    </div>
+                </div>
+                
                 <Form.Group className="mb-4 px-5" controlId="formBasicPassword">
                     <Form.Label className={style.form_label}>Quantity</Form.Label>
-                    <Form.Control type="number" placeholder="Input your seat quantity" />
+                    <Form.Control type="number" min="1" placeholder="Input your seat quantity" />
                 </Form.Group>
                 
                 <div className='d-grid gap-2'>
