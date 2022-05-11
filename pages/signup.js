@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useState } from 'react'
 import { Form } from 'react-bootstrap'
 import { Button } from 'react-bootstrap'
 import style from './components/Layout/layout.module.css'
@@ -7,6 +7,15 @@ import Background from '/public/bg_vector.png'
 import Link from 'next/link'
 
 const signup = () => {
+    
+    const[errMsg,setErrMsg] = useState('');
+    const[success,setSuccess]= useState(false);
+
+    const handleSubmit = async (e) => {
+        e.preventDefault();
+        console.log(email,pwd);
+        setSuccess(true);
+    }
     return (
         <>
         
@@ -14,25 +23,25 @@ const signup = () => {
         <Layout>
             <div className={style.register_container}>
                 <h2 className={`${style.form_title} ${'text-center'}`}><b> Create Account </b></h2>
-            <Form className={style.form_container}> 
-            <Form.Group className="mb-4 px-5" controlId="formBasicName">
+            <Form className={style.form_container} onSubmit={handleSubmit}> 
+            <Form.Group className="mb-4 px-5">
                 <Form.Label className={style.form_label}>Full Name</Form.Label>
-                <Form.Control type="text" placeholder="Input your full name" />
+                <Form.Control type="text" id="name" placeholder="Input your full name" />
             </Form.Group>
 
-            <Form.Group className="mb-4 px-5" controlId="formBasicEmail">
+            <Form.Group className="mb-4 px-5">
                 <Form.Label className={style.form_label}>Email</Form.Label>
-                <Form.Control type="email" placeholder="Enter email" />
+                <Form.Control type="email" id="email" placeholder="Enter email" />
             </Form.Group>
     
-            <Form.Group className="mb-4 px-5" controlId="formBasicPassword">
+            <Form.Group className="mb-4 px-5">
                 <Form.Label className={style.form_label}>Password</Form.Label>
-                <Form.Control type="password" placeholder="Password" />
+                <Form.Control type="password" id="pwd" placeholder="Password" />
             </Form.Group>
 
-            <Form.Group className="mb-5 px-5" controlId="formBasicPassword">
+            <Form.Group className="mb-5 px-5">
                 <Form.Label className={style.form_label}>Confirm Password</Form.Label>
-                <Form.Control type="password" placeholder="Input your Password again" />
+                <Form.Control type="password" id="confirm_pwd" placeholder="Input your Password again" />
             </Form.Group>
             
             <div className='d-grid gap-2'>

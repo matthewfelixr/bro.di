@@ -2,9 +2,9 @@ import React from 'react'
 
 const MainContent = (props) => {
   return (
-    <div>
-        {props.children}
-    </div>
+    <>
+    {props.children}
+    </>
   )
 }
 
