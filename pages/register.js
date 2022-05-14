@@ -10,7 +10,7 @@ const register = () => {
   const onSubmit = data => console.log(data);
   console.log(errors);
 
-  axios.post('http://localhost:5000/api/v1/register', {
+  axios.post('localhost:5000/api/vi/register', {
     namaUser: '',
     email: '',
     password: '',
