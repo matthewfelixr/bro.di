@@ -4,7 +4,7 @@ import style from './components/Layout/layout.module.css'
 import Image from 'next/image'
 import solaria from '../public/solaria.png'
 import imgtemp from '../public/imgtemp.png'
-import Link from 'next/Link'
+import Link from 'next/link'
 import Tabs from './components/Layout/Tabs'
 const Restodetail = () => {
   return (
