@@ -23,7 +23,7 @@ export default function Document(props) {
     crossOrigin="anonymous"/>
       <body>
         <Main />
-        {/* <NextScript /> */}
+        <NextScript />
       </body>
     </Html>
   );
