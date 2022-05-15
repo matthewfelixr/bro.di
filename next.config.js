@@ -8,10 +8,10 @@ const nextConfig = {
      $: "jquery",
      jQuery: "jquery",
      "window.jQuery": "jquery",
-  })
+    })
   );
   return config;
 },
-}
+};
 
-module.exports = nextConfig
+module.exports = nextConfig;
