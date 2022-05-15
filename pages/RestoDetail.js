@@ -6,7 +6,7 @@ import solaria from '../public/solaria.png'
 import imgtemp from '../public/imgtemp.png'
 import Link from 'next/Link'
 import Tabs from './components/Layout/Tabs'
-const RestoDetail = () => {
+const Restodetail = () => {
   return (
     <LayoutAuth>
     <div className={style.grid_container2}>
@@ -45,4 +45,4 @@ const RestoDetail = () => {
   )
 }
 
-export default RestoDetail
+export default Restodetail
