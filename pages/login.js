@@ -102,7 +102,7 @@ const Login = () => {
 
                 <div className='d-grid gap-2'>
                     <button className={`${style.button_sub_login} ${"flex-grow-1 px-5"}`}type="submit">Login</button>
-                    <Link href="/login"><button className={`${style.button_sub_signup} ${"flex-grow-1 px-5"}`} >Login</button></Link>
+                    <Link href="/signup"><button className={`${style.button_sub_signup} ${"flex-grow-1 px-5"}`} >Create Account</button></Link>
                 </div>
             </form>
             </div>
