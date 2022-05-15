@@ -10,7 +10,7 @@ const search = () => {
     <>
         <LayoutAuth>
             <div className={style.search_header}>
-                <h1>Result of 'Solaria'</h1>
+                <h1>Result of Solaria</h1>
                 <br></br>
                 <br></br>
             </div>

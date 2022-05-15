@@ -10,7 +10,7 @@
 // import userSlice from './components/Layout/store/userSlice'
 // import { Provider } from "react-redux";
 // import store from './components/Layout/store/store'
-// const register = () => {
+// const Register = () => {
 //   const { register, handleSubmit, formState:{errors} } = useForm();
 
 // 	// memberitahu pesan gagal dalam regis
@@ -109,7 +109,7 @@
 //   )
 // }
 
-// export default register
+// export default Register
 
 // //, pattern: /^(?=.*[a-z])(?=.*[A-Z])(?=.*\d)[a-zA-Z\d]{8,}$/i pattern password, conf password
 // //, pattern: /^(?=.*[a-z])(?=.*[A-Z])(?=.*\d)[a-zA-Z\d]{8,}$/i

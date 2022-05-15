@@ -6,7 +6,7 @@ import Layout from '../Layouts/Layout'
 import Background from '/public/bg_vector.png'
 import Link from 'next/link'
 
-const signup = () => {
+const Signup = () => {
     
     // const[errMsg,setErrMsg] = useState('');
     // const[success,setSuccess]= useState(false);
@@ -80,4 +80,4 @@ const signup = () => {
       )
 }
 
-export default signup
+export default Signup
