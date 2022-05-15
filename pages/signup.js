@@ -8,14 +8,35 @@ import Link from 'next/link'
 
 const signup = () => {
     
-    const[errMsg,setErrMsg] = useState('');
-    const[success,setSuccess]= useState(false);
+    // const[errMsg,setErrMsg] = useState('');
+    // const[success,setSuccess]= useState(false);
+
+    const [namaUser,setNamaUser] =useState("");
+    const [email,setEmail] =useState("");
+    const [password,setPassword] =useState("");
 
     const handleSubmit = async (e) => {
         e.preventDefault();
-        console.log(email,pwd);
-        setSuccess(true);
-    }
+        const user ={namaUser,email,password} 
+        console.log(user);
+        // setSuccess(true);
+
+            fetch("http://localhost:5000/api/v1/user/register", {
+            method: "POST",
+            headers: {
+                "Content-Type": "application/json",
+            },
+            // credentials: "same-origin",
+            body: JSON.stringify(user),
+            }).then((res) => res.json())
+            .then((res)=>{
+                console.log(res.data);
+            // fetch("")
+            // router.push("/dashboard");
+            });
+        };
+
+    
     return (
         <>
         
@@ -23,32 +44,34 @@ const signup = () => {
         <Layout>
             <div className={style.register_container}>
                 <h2 className={`${style.form_title} ${'text-center'}`}><b> Create Account </b></h2>
-            <Form className={style.form_container} onSubmit={handleSubmit}> 
-            <Form.Group className="mb-4 px-5">
-                <Form.Label className={style.form_label}>Full Name</Form.Label>
-                <Form.Control type="text" id="name" placeholder="Input your full name" />
-            </Form.Group>
+            <form onSubmit={handleSubmit}>
+                <label>Full Name</label>
+            <input className={style.form_input}
+                type="text"
+                placeholder="Enter Your Full Name"
+                value={namaUser}
+                onChange={(e) => setNamaUser(e.target.value)}
+            />
+                <label>Email</label>
+            <input
+                type="email"
+                placeholder="Enter Your Email"
+                value={email}
+                onChange={(e) => setEmail(e.target.value)}
+            />
+            <label>Password</label>
+            <input
+                type="password"
+                placeholder="Enter Your Password"
+                value={password}
+                onChange={(e) => setPassword(e.target.value)}
+            />
 
-            <Form.Group className="mb-4 px-5">
-                <Form.Label className={style.form_label}>Email</Form.Label>
-                <Form.Control type="email" id="email" placeholder="Enter email" />
-            </Form.Group>
-    
-            <Form.Group className="mb-4 px-5">
-                <Form.Label className={style.form_label}>Password</Form.Label>
-                <Form.Control type="password" id="pwd" placeholder="Password" />
-            </Form.Group>
-
-            <Form.Group className="mb-5 px-5">
-                <Form.Label className={style.form_label}>Confirm Password</Form.Label>
-                <Form.Control type="password" id="confirm_pwd" placeholder="Input your Password again" />
-            </Form.Group>
-            
-            <div className='d-grid gap-2'>
-                <button className={`${style.button_sub_login} ${"flex-grow-1 px-5"}`}type="submit">Create Account</button>
-                <Link href="/login"><button className={`${style.button_sub_signup} ${"flex-grow-1 px-5"}`} >Login</button></Link>
-            </div>
-        </Form>
+                <div className='d-grid gap-2'>
+                    <button className={`${style.button_sub_login} ${"flex-grow-1 px-5"}`}type="submit">Create Account</button>
+                    <Link href="/login"><button className={`${style.button_sub_signup} ${"flex-grow-1 px-5"}`} >Login</button></Link>
+                </div>
+            </form>
             </div>
             </Layout>
             </div>

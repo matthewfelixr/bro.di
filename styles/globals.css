@@ -4,6 +4,7 @@ body {
   margin: 0;
   font-family: "Ubuntu";
   width: fit-content;
+  overflow-x: hidden;
 }
 
 a {

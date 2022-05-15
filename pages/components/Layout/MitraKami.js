@@ -25,57 +25,57 @@ const MitraKami = () => {
             </div>
         </div>
 
-        <div class={style.grid_container}>
-            <div class={style.item1}>
+        <div className={style.grid_container}>
+            <div className={style.item1}>
                 <Image
                     src={sushitei}
                     width={147}
                     height={265}
                 />
             </div>
-            <div class={style.item2}>
+            <div className={style.item2}>
                 <Image
                     src={solaria}
                     width={265}
                     height={265}
                 />
             </div>
-            <div class={style.item3}>
+            <div className={style.item3}>
                 <Image
                     src={marudon}
                     width={633}
                     height={89}
                 />    
             </div>  
-            <div class={style.item4}>
+            <div className={style.item4}>
             <Image
                     src={yoshinoya}
                     width={633}
                     height={139}
                 />
             </div>
-            <div class={style.item5}>
+            <div className={style.item5}>
             <Image
                     src={pelunch}
                     width={212}
                     height={176}
                 />
             </div>
-            <div class={style.item6}>
+            <div className={style.item6}>
             <Image
                     src={bakmigm}
                     width={249}
                     height={176}
                 />
             </div>
-            <div class={style.item7}>
+            <div className={style.item7}>
             <Image
                     src={aw}
                     width={318}
                     height={176}
                 />
             </div>
-            <div class={style.item8}>
+            <div className={style.item8}>
             <Image
                     src={kafbet}
                     width={277}
