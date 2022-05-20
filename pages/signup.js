@@ -22,7 +22,7 @@ const Signup = () => {
         console.log(user);
         // setSuccess(true);
 
-            fetch("http://localhost:5000/api/v1/user/register", {
+            fetch("https://brodi-db.herokuapp.com/api/v1/user/register", {
             method: "POST",
             headers: {
                 "Content-Type": "application/json",

@@ -40,7 +40,7 @@ const Login = () => {
         const user ={namaUser,email,password} 
         console.log(user);
 
-        axios.post("http://localhost:5000/api/v1/user/login",user)
+        axios.post("https://brodi-db.herokuapp.com/api/v1/user/login",user)
         .then((res) => {
             setUserId(res.data.data.id);
             setJwt(res.data.data.accessToken);

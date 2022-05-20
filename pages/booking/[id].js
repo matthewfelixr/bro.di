@@ -24,7 +24,7 @@ const booking = ({restoran,meja}) => {
 
 
     // useEffect(() => {
-    //     axios.get(`http://localhost:5000/api/v1/restaurant/${id}`).then((res)=>{
+    //     axios.get(`https://brodi-db.herokuapp.com/api/v1/restaurant/${id}`).then((res)=>{
     //       setRestoran(res.data.data)
     //     })
     //     .catch((err)=>{
@@ -43,7 +43,7 @@ const booking = ({restoran,meja}) => {
               bookStatus:"success"}
           console.log(order)
 
-          axios.post("http://localhost:5000/api/v1/order/create",order)
+          axios.post("https://brodi-db.herokuapp.com/api/v1/order/create",order)
           .then((res)=>{
 
             
@@ -60,7 +60,7 @@ const booking = ({restoran,meja}) => {
                 <form className='p-5 mb-4' onSubmit={handleSubmit}>
                     <label className={style.form_label}>Date</label>
                     <input
-                        type="datetime"
+                        type="date"
                         placeholder="dd/mm/yyy"
                         value={bookDate}
                         onChange={(e) => setBookDate(e.target.value)}
@@ -71,7 +71,7 @@ const booking = ({restoran,meja}) => {
                         <div className='col-6'>
                             <label className={style.form_label}>Hour Start</label>
                             <input
-                            type="datetime"
+                            type="time"
                             placeholder="00:00"
                             value={bookHourStart}
                             onChange={(e) => setBookHourStart(e.target.value)}
@@ -81,7 +81,7 @@ const booking = ({restoran,meja}) => {
                         <div className='col-6'>
                             <label className={style.form_label}>Hour End</label>
                             <input
-                            type="datetime"
+                            type="time"
                             placeholder="00:00"
                             value={bookHourEnd}
                             onChange={(e) => setBookHourEnd (e.target.value)}
@@ -165,9 +165,9 @@ const booking = ({restoran,meja}) => {
   )
 }
 export async function getServerSideProps(context){
-    const restoran = await fetch(`http://localhost:5000/api/v1/restaurant/${context.params.id}`)
+    const restoran = await fetch(`https://brodi-db.herokuapp.com/api/v1/restaurant/${context.params.id}`)
         .then(res=> res.json());
-    const meja = await fetch(`http://localhost:5000/api/v1/table/all`)
+    const meja = await fetch(`https://brodi-db.herokuapp.com/api/v1/table/all`)
         .then(res=> res.json());
     return{
         props: {

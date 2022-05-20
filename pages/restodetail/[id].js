@@ -26,7 +26,7 @@ const RestoDetail = ({restoran}) => {
     // }
     // console.log(restoDetail);
         // useEffect(() => {
-        //   axios.get(`http://localhost:5000/api/v1/restaurant/${id}`).then((res)=>{
+        //   axios.get(`https://brodi-db.herokuapp.com/api/v1/restaurant/${id}`).then((res)=>{
         //     setRestoran(res.data.data)
         //   })
         //   .catch((err)=>{
@@ -74,7 +74,7 @@ const RestoDetail = ({restoran}) => {
   )
 }
 export async function getServerSideProps(context){
-  const restoran = await fetch(`http://localhost:5000/api/v1/restaurant/${context.params.id}`)
+  const restoran = await fetch(`https://brodi-db.herokuapp.com/api/v1/restaurant/${context.params.id}`)
       .then(res=> res.json());
   
   return{
