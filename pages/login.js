@@ -1,7 +1,5 @@
-import {React, useState, useEffect} from 'react'
+import React,{useState, useEffect} from 'react'
 import Link from 'next/link'
-import { Form } from 'react-bootstrap'
-import { Button } from 'react-bootstrap'
 import style from './components/Layout/layout.module.css'
 import Layout from '../Layouts/Layout'
 import Background from '/public/bg_vector.png'
