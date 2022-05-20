@@ -8,7 +8,7 @@ import axios from 'axios';
 import Cookies from 'js-cookie'
 import withUtils from '../components/Layout/withUtils/withUtils';
 
-const booking = ({restoran,meja}) => {
+const Booking = ({restoran,meja}) => {
     // const [restoran,setRestoran] = useState()
     const router = useRouter();
     const { id } = router.query;
@@ -178,4 +178,4 @@ export async function getServerSideProps(context){
     
   
   }
-export default withUtils(booking)
+export default withUtils(Booking)
