@@ -1,11 +1,11 @@
 import { useRouter } from "next/router";
 import Cookies from "js-cookie";
-
+// eslint-disable-next-line react/display-name
 const WithUtils = (WrappedComponent) => {
+  const Router = useRouter();
   return (props) => {
     // checks whether we are on client / browser or server.
     if (typeof window !== "undefined") {
-      const Router = useRouter();
 
       const accessToken = Cookies.get("jwt");
 
