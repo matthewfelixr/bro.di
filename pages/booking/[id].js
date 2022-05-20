@@ -12,10 +12,10 @@ const Booking = ({restoran,meja}) => {
     // const [restoran,setRestoran] = UseState()
     const router = UseRouter();
     const { id } = router.query;
-    const [bookDate,setBookDate] =UseState("");
-    const [bookHourStart,setBookHourStart] =UseState("");
-    const [bookHourEnd,setBookHourEnd] =UseState("");
-    const [seat,setSeat] =UseState("");
+    const [bookDate,setBookDate] =UseState();
+    const [bookHourStart,setBookHourStart] =UseState();
+    const [bookHourEnd,setBookHourEnd] =UseState();
+    const [seat,setSeat] =UseState();
     const [idMeja,setSelectSeat]=UseState(['option 1','option 2'])
     const idUser = Cookies.get("userId");
     // console.log(restoran)

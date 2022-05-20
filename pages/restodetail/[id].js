@@ -1,14 +1,14 @@
 import {React , useState , useEffect } from 'react'
 import { useRouter } from "next/router";
-import axios from 'axios';  
+// import axios from 'axios';  
 import LayoutAuth from '../../Layouts/LayoutAuth'
 import style from '../components/Layout/layout.module.css'
 import Image from 'next/image'
 import solaria from '../../public/solaria.png'
-import imgtemp from '../../public/imgtemp.png'
+// import imgtemp from '../../public/imgtemp.png'
 import Link from 'next/link'
 import Tabs from '../components/Layout/Tabs'
-import { useParams } from 'react-router';
+// import { useParams } from 'react-router';
 import withUtils from '../components/Layout/withUtils/WithUtils';
 const RestoDetail = ({restoran}) => {
 
