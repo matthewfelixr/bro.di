@@ -14,16 +14,26 @@ const Login = () => {
     const [namaUser,setNamaUser] =useState("");
     const [email,setEmail] =useState("");
     const [password,setPassword] =useState("");
+    const [userId, setUserId]= useState(()=>{
+        const cookie = Cookies.get("userId");
+        return cookie ? cookie : "";
+    });
+
     const [jwt, setJwt] = useState(() => {
         const cookie = Cookies.get("jwt");
-        return cookie ? cookie : false;
+        return cookie ? cookie : "";
       });
     const router = useRouter();
 
     useEffect(() => {
 
         Cookies.set("jwt", jwt, { path: "" });
-        }, [jwt]);
+    }, [jwt]);
+        
+    useEffect(() => {
+
+        Cookies.set("userId", userId, { path: "" });
+    }, [userId]);
 
     const handleSubmit = async (e) => {
         e.preventDefault();
@@ -32,47 +42,13 @@ const Login = () => {
 
         axios.post("http://localhost:5000/api/v1/user/login",user)
         .then((res) => {
+            setUserId(res.data.data.id);
             setJwt(res.data.data.accessToken);
+            router.replace("/dashboard")
             // console.log(res.data.data.accessToken);
             // Cookies.set('token', res.data.accessToken)
             // router.push("/dashboard");
             });
-        // setSuccess(true);
-
-            // fetch("http://localhost:5000/api/v1/user/login", {
-            // method: "POST",
-            // headers: {
-            //     "Content-Type": "application/json",
-            // },
-            // // credentials: "same-origin",
-            // body: JSON.stringify(user),
-            // }).then((res)=>{
-            //     res.json()
-            // }).then((res) => {
-            // console.log(res);
-            // // Cookies.set('token', res.data.accessToken)
-            // // router.push("/dashboard");
-            // });
-            // axios
-			// .post("http://localhost:5000/api/v1/user/login", user) // server nya ON kan dulu sebelumnya
-			// .then((res) => {
-			// 	// memastikan bahwa token nya ada
-			// 	if (typeof res.data.accessToken !== "undefined") {
-			// 		// menyimpan di local storage
-			// 		localStorage.setItem("brodiShopAccessToken", res.data.accessToken);
-
-			// 		// menyimpan di redux store
-			// 		const user = jwtDecode(res.data.accessToken);
-			// 		axios.get(`localhost:5000/api/v1/user/${user.sub}`).then((res) => {
-			// 			dispatch(
-			// 				userSlice.actions.addUser({
-			// 					userData: res.data,
-			// 				})
-			// 			);
-			// 			navigate("/dashboard");
-			// 		});
-			// 	}
-			// })
         };
 
     
@@ -82,27 +58,30 @@ const Login = () => {
     
     <div className={style.body}>
         <Layout>
-            <div className={style.register_container}>
-                <h2 className={`${style.form_title} ${'text-center'}`}><b> Create Account </b></h2>
-            <form onSubmit={handleSubmit}>
-                <label>Email</label>
+            <div className={style.login_container}>
+                <h2 className={`${style.form_title} ${'text-center'}`}><b> Login </b></h2>
+            <form className=" p-5 mb-4"onSubmit={handleSubmit}>
+
+                <label className={style.form_label}>Email</label> 
             <input
                 type="email"
                 placeholder="Enter Your Email"
                 value={email}
                 onChange={(e) => setEmail(e.target.value)}
+                className={style.form_input}
             />
-            <label>Password</label>
+            <label className={style.form_label} >Password</label>
             <input
                 type="password"
                 placeholder="Enter Your Password"
                 value={password}
                 onChange={(e) => setPassword(e.target.value)}
+                className={style.form_input}
             />
 
-                <div className='d-grid gap-2'>
-                    <button className={`${style.button_sub_login} ${"flex-grow-1 px-5"}`}type="submit">Login</button>
-                    <Link href="/signup"><button className={`${style.button_sub_signup} ${"flex-grow-1 px-5"}`} >Create Account</button></Link>
+                <div className='d-grid gap-2 mt-2'>
+                    <button className={`${style.button_sub_login} ${"flex-grow-1 px-5 m-0 w-100"}`}type="submit">Login</button>
+                    <Link href="/signup"><button className={`${style.button_sub_signup} ${"flex-grow-1 px-5 m-0 w-100"}`} >Create Account</button></Link>
                 </div>
             </form>
             </div>

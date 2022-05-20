@@ -1,10 +1,12 @@
-import React from 'react'
+import React, { useEffect, useState } from 'react'
 import Link from 'next/link'
 import  style from './layout.module.css'
 import Image from 'next/image'
 import Rating from  '../../../public/rating.png'
 
 const RestoCard = () => {
+  // const [resto,setResto] = useState();
+  // useEffect(()=>{})
   return (
     <>
     <br></br>
@@ -16,16 +18,17 @@ const RestoCard = () => {
             <Link href="/dashboard">
             <a>
             <div className={style.card_short_description}>
-                <h4><b>Solaria Buah Batu</b></h4>
+                <h3><b>Solaria Buah Batu</b></h3>
                 <div className='row'>
-                    <div className='col-9'><h6> Bandung, Jawa Barat  </h6></div>
-                    <div className='col-1'>
+                    <div className='col-7'><h6> Bandung, Jawa Barat  </h6></div>
+                    <div className='col'>
                       <Image
                             src={Rating}
                             alt="Rating"
-                            width={120}
-                            height={19}
-                        /> </div>
+                            width={130}
+                            height={20}
+                        />
+                      </div>
                 </div> 
             </div>
             </a>

@@ -8,10 +8,10 @@ import Recommended from './components/Layout/Recommended'
 import RestoranGrid from './components/Layout/RestoranGrid'
 import LayoutAuth from '../Layouts/LayoutAuth'
 import { useRouter} from 'next/router'
+import withUtils from './components/Layout/withUtils/withUtils'
 
-const Dashboard = (res) => {
+const Dashboard = () => {
   const router = useRouter();
-  // if(res.data.accessToken !== 'undefined'){
   const OwlCarousel = dynamic(() => import("react-owl-carousel"), {
     ssr: false,
   });
@@ -29,7 +29,6 @@ const Dashboard = (res) => {
     </>
   )
   }
-  // else{router.push("/login")}
 
 
-export default Dashboard
+export default withUtils(Dashboard)

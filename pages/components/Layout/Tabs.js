@@ -3,12 +3,16 @@ import Image from 'next/image'
 import imgtemp from '../../../public/imgtemp.png'
 // import "./App.css";
 
-function Tabs() {
+function Tabs({namaRestoran,lokasiRestoran,gambarRestoran,gambarMenu}) {
   const [toggleState, setToggleState] = useState(1);
 
   const toggleTab = (index) => {
     setToggleState(index);
   };
+
+  var imageSize ={
+    width:"420px", height:"350px"
+  }
 
   return (
     <div className="nav_container">
@@ -40,7 +44,7 @@ function Tabs() {
         <h2>Overview</h2>
           <hr />
           <p>
-            Solaria is a restaurant that serve Indonesian Food and Western Food which the taste is very gud.
+            {namaRestoran} is a restaurant that serve Indonesian Food and Western Food which the taste is very gud.
             <br></br><br></br>
             Hours of Operation :<br></br>
             10.00 AM - 20.00 PM
@@ -58,11 +62,12 @@ function Tabs() {
           <p>
            Check The Picture Below
            <br></br>
-           <Image
-              src={imgtemp}
+           <img src={gambarMenu} alt="menu" style={imageSize}></img>
+           {/* <Image
+              src={gambarMenu}
               width={420}
               height={350}
-              />    
+              />     */}
           </p>
           
         </div>

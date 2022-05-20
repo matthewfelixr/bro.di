@@ -3,6 +3,7 @@ import Layout from '../Layouts/Layout'
 import LayoutAuth from '../Layouts/LayoutAuth'
 import ReservedCard from './components/Layout/ReservedCard'
 import style from './components/Layout/layout.module.css'
+import withUtils from './components/Layout/withUtils/withUtils'
 
 const reserved = () => {
   return (
@@ -28,4 +29,4 @@ const reserved = () => {
   )
 }
 
-export default reserved
+export default withUtils(reserved)

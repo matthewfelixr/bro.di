@@ -2,6 +2,7 @@ import React from 'react'
 import { Form } from 'react-bootstrap'
 import style from './components/Layout/layout.module.css'
 import Layout from '../Layouts/Layout'
+import withUtils from './components/Layout/withUtils/withUtils'
 // import Link from 'next/link'
 
 const profile = () => {
@@ -36,4 +37,4 @@ const profile = () => {
   )
 }
 
-export default profile
+export default withUtils(profile)

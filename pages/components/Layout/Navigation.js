@@ -9,22 +9,22 @@ const Navigation = () => {
                 <div className="col">
                     <div className="d-flex align-items-center ms-5 ps-5">
                         <div className={style.navigation_brand}>
-                            <Link href="/">bro.di</Link></div>
+                            <Link href="/dashboard">bro.di</Link></div>
                         <div className={style.navigation_searchbar}>
                             <input type={'text'}></input>
                         </div>
                         <div className='px-2'>
-                            <Link href="/">
+                            <Link href="/search">
                                 <a className={style.navigation_button}>Restaurant</a>
                             </Link>
                         </div>
                         <div className='px-2'>
-                            <Link href="/">
+                            <Link href="/reserved">
                                 <a className={style.navigation_button}>Reserved</a>
                             </Link>
                         </div>
                         <div className='px-2'>
-                            <Link href="/">
+                            <Link href="/profile">
                                 <a className={style.navigation_button}>Profile</a>
                             </Link>
                         </div>
