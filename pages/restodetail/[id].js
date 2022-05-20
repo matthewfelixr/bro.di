@@ -9,7 +9,7 @@ import solaria from '../../public/solaria.png'
 import Link from 'next/link'
 import Tabs from '../components/Layout/Tabs'
 // import { useParams } from 'react-router';
-import withUtils from '../components/Layout/withUtils/WithUtils';
+import WithUtils from '../components/Layout/WithUtil/WithUtils';
 const RestoDetail = ({restoran}) => {
 
     // const param = useParams()
@@ -85,4 +85,4 @@ export async function getServerSideProps(context){
   
 
 }
-export default withUtils(RestoDetail)
+export default WithUtils(RestoDetail)

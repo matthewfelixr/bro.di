@@ -6,7 +6,7 @@ import Layout from '../../Layouts/Layout'
 import Link from 'next/link'
 import axios from 'axios';
 import Cookies from 'js-cookie'
-import WithUtils from '../components/Layout/withUtils/WithUtils';
+import WithUtils from '../components/Layout/WithUtil/WithUtils';
 
 const Booking = ({restoran,meja}) => {
     // const [restoran,setRestoran] = useState()

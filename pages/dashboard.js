@@ -8,7 +8,7 @@ import Recommended from './components/Layout/Recommended'
 import RestoranGrid from './components/Layout/RestoranGrid'
 import LayoutAuth from '../Layouts/LayoutAuth'
 import { useRouter} from 'next/router'
-import withUtils from './components/Layout/withUtils/withUtils'
+import WithUtils from './components/Layout/WithUtil/WithUtils'
 
 const Dashboard = () => {
   const router = useRouter();
@@ -31,4 +31,4 @@ const Dashboard = () => {
   }
 
 
-export default withUtils(Dashboard)
+export default WithUtils(Dashboard)
