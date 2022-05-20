@@ -58,7 +58,7 @@ const RestoDetail = ({restoran}) => {
         <div className={style.grid_item2}>
               <img src={restoran.gambarRestoran} alt={`Gambar Resto ${restoran.namaRestoran}`} style={imageSize}></img>
             <div className='mt-2'>
-                    <Link href={`/booking/${id}`}><button className={`${style.button_sub_book} ${"flex-grow-1 px-5 m-auto"}`}type="submit">Book Now</button></Link>
+                    <Link href={`/Book/${id}`}><button className={`${style.button_sub_book} ${"flex-grow-1 px-5 m-auto"}`}type="submit">Book Now</button></Link>
             </div>
 
         </div>

@@ -1,5 +1,5 @@
-import React,{UseState,useEffect} from 'react'
-import { UseRouter } from "next/router";
+import React,{useState,useEffect} from 'react'
+import { useRouter } from "next/router";
 import { Form, Table } from 'react-bootstrap'
 import style from '../components/Layout/layout.module.css'
 import Layout from '../../Layouts/Layout'
@@ -9,14 +9,14 @@ import Cookies from 'js-cookie'
 import WithUtils from '../components/Layout/withUtils/WithUtils';
 
 const Booking = ({restoran,meja}) => {
-    // const [restoran,setRestoran] = UseState()
-    const router = UseRouter();
+    // const [restoran,setRestoran] = useState()
+    const router = useRouter();
     const { id } = router.query;
-    const [bookDate,setBookDate] =UseState();
-    const [bookHourStart,setBookHourStart] =UseState();
-    const [bookHourEnd,setBookHourEnd] =UseState();
-    const [seat,setSeat] =UseState();
-    const [idMeja,setSelectSeat]=UseState(['option 1','option 2'])
+    const [bookDate,setBookDate] =useState();
+    const [bookHourStart,setBookHourStart] =useState();
+    const [bookHourEnd,setBookHourEnd] =useState();
+    const [seat,setSeat] =useState();
+    const [idMeja,setSelectSeat]=useState(['option 1','option 2'])
     const idUser = Cookies.get("userId");
     // console.log(restoran)
     // console.log(meja)
