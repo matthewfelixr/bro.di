@@ -24,5 +24,5 @@ const WithUtils = (WrappedComponent) => {
     return null;
   };
 };
-
+WithUtils.displayName = 'WithUtils';
 export default WithUtils;
