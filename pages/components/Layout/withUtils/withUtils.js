@@ -1,7 +1,7 @@
 import { useRouter } from "next/router";
 import Cookies from "js-cookie";
 
-const withUtils = (WrappedComponent) => {
+const WithUtils = (WrappedComponent) => {
   return (props) => {
     // checks whether we are on client / browser or server.
     if (typeof window !== "undefined") {
@@ -25,4 +25,4 @@ const withUtils = (WrappedComponent) => {
   };
 };
 
-export default withUtils;
+export default WithUtils;

@@ -9,7 +9,7 @@ import imgtemp from '../../public/imgtemp.png'
 import Link from 'next/link'
 import Tabs from '../components/Layout/Tabs'
 import { useParams } from 'react-router';
-import withUtils from '../components/Layout/withUtils/withUtils';
+import withUtils from '../components/Layout/withUtils/WithUtils';
 const RestoDetail = ({restoran}) => {
 
     // const param = useParams()

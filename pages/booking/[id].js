@@ -1,16 +1,16 @@
 import React,{UseState,useEffect} from 'react'
-import { useRouter } from "next/router";
+import { UseRouter } from "next/router";
 import { Form, Table } from 'react-bootstrap'
 import style from '../components/Layout/layout.module.css'
 import Layout from '../../Layouts/Layout'
 import Link from 'next/link'
 import axios from 'axios';
 import Cookies from 'js-cookie'
-import withUtils from '../components/Layout/withUtils/withUtils';
+import WithUtils from '../components/Layout/withUtils/WithUtils';
 
 const Booking = ({restoran,meja}) => {
     // const [restoran,setRestoran] = UseState()
-    const router = useRouter();
+    const router = UseRouter();
     const { id } = router.query;
     const [bookDate,setBookDate] =UseState("");
     const [bookHourStart,setBookHourStart] =UseState("");
@@ -178,4 +178,4 @@ export async function getServerSideProps(context){
     
   
   }
-export default withUtils(Booking)
+export default WithUtils(Booking)
