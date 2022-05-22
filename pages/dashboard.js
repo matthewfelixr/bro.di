@@ -26,6 +26,7 @@ const Dashboard = ({restoran}) => {
     {restoran.map(resto=>(
   
     <RestoCard
+      key={resto.id}
       namaRestoran={resto.namaRestoran}
       lokasiRestoran={resto.lokasiRestoran}
       id={resto.id}
