@@ -33,6 +33,10 @@ const Booking = ({restoran,meja}) => {
     //   })
     
       const handleSubmit = (e)=>{
+        bookHourStart = new Date(bookDate + " " + bookHourStart)
+        bookHourEnd = new Date(bookDate + " " + bookHourEnd)
+        bookDate = new Date(bookDate);
+
           e.preventDefault();
           const order = {
               idUser,
