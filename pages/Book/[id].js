@@ -43,7 +43,7 @@ const Booking = ({restoran,meja}) => {
               bookStatus:"success"}
           console.log(order)
 
-          axios.post("http://localhost:5000/api/v1/order/create",order)
+          axios.post("https://brodi-db.herokuapp.com/api/v1/order/create",order)
           .then((res)=>{
             console.log(res)
             

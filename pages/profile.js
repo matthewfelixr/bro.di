@@ -14,12 +14,12 @@ const Profile = () => {
             <Form className={style.form_container}> 
                 <Form.Group className="mb-4 px-5" controlId="formBasicName">
                     <Form.Label className={style.form_label}>Full Name</Form.Label>
-                    <Form.Control type="text" placeholder="Windah Nursetyadi" />
+                    <Form.Control type="text" placeholder="Your Name" />
                 </Form.Group>
 
                 <Form.Group className="mb-4 px-5" controlId="formBasicEmail">
                     <Form.Label className={style.form_label}>Email</Form.Label>
-                    <Form.Control type="email" placeholder="windah@nursetyadi.com" />
+                    <Form.Control type="email" placeholder="youremail@provider.com" />
                 </Form.Group>
         
                 <Form.Group className="mb-4 px-5" controlId="formBasicPassword">
