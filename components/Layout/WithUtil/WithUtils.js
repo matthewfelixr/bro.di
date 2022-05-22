@@ -1,10 +1,11 @@
 import { useRouter } from "next/router";
 import Cookies from "js-cookie";
-const withUtils = (WrappedComponent) => {
+import { useEffect } from "react";
+const WithUtils = (WrappedComponent) => {
 
   // eslint-disable-next-line react/display-name
   return (props) => {
-    const Router = useRouter();
+    const Router = useRouter();  
     // checks whether we are on client / browser or server.
 
     if (typeof window !== "undefined") {
@@ -29,4 +30,4 @@ const withUtils = (WrappedComponent) => {
   };
 };
 // WithUtils.displayName = 'WithUtils';
-export default withUtils;
+export default WithUtils;

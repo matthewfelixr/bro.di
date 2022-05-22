@@ -1,7 +1,7 @@
 import React, { useState } from 'react'
 import { Form } from 'react-bootstrap'
 import { Button } from 'react-bootstrap'
-import style from './components/Layout/layout.module.css'
+import style from '../components/Layout/layout.module.css'
 import Layout from '../Layouts/Layout'
 import Background from '/public/bg_vector.png'
 import Link from 'next/link'

@@ -1,11 +1,11 @@
 import React from 'react'
 import Layout from '../Layouts/Layout'
 import LayoutAuth from '../Layouts/LayoutAuth'
-import ReservedCard from './components/Layout/ReservedCard'
-import style from './components/Layout/layout.module.css'
-import WithUtils from './components/Layout/WithUtil/withUtils'
+import ReservedCard from '../components/Layout/ReservedCard'
+import style from '../components/Layout/layout.module.css'
+import WithUtils from '../components/Layout/WithUtil/WithUtils'
 
-const reserved = () => {
+const Reserved = () => {
   return (
     <LayoutAuth>
         <div className='container mt-5 mb-5'>
@@ -29,4 +29,4 @@ const reserved = () => {
   )
 }
 
-export default WithUtils(reserved)
+export default WithUtils(Reserved)

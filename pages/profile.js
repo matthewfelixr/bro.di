@@ -1,11 +1,11 @@
 import React from 'react'
 import { Form } from 'react-bootstrap'
-import style from './components/Layout/layout.module.css'
+import style from '../components/Layout/layout.module.css'
 import Layout from '../Layouts/Layout'
-import withUtils from './components/Layout/WithUtil/withUtils'
+import WithUtils from '../components/Layout/WithUtil/WithUtils'
 // import Link from 'next/link'
 
-const profile = () => {
+const Profile = () => {
   return (
     <div className={style.body}>
         <Layout>
@@ -37,4 +37,4 @@ const profile = () => {
   )
 }
 
-export default profile
+export default WithUtils(Profile)

@@ -2,14 +2,13 @@
 import { useRouter } from "next/router";
 // import axios from 'axios';  
 import LayoutAuth from '../../Layouts/LayoutAuth'
-import style from '../components/Layout/layout.module.css'
+import style from '../../components/Layout/layout.module.css'
 import Image from 'next/image'
 import solaria from '../../public/solaria.png'
-// import imgtemp from '../../public/imgtemp.png'
 import Link from 'next/link'
-import Tabs from '../components/Layout/Tabs'
+import Tabs from '../../components/Layout/Tabs'
 // import { useParams } from 'react-router';
-import WithUtils from '../components/Layout/WithUtil/withUtils';
+import WithUtils from '../../components/Layout/WithUtil/WithUtils';
 const RestoDetail = ({restoran}) => {
 
     // const param = useParams()
@@ -85,4 +84,4 @@ export async function getServerSideProps(ctx){
   
 
 }
-export default RestoDetail
+export default WithUtils(RestoDetail)

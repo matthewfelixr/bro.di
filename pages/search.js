@@ -1,7 +1,7 @@
 import React from 'react'
 import Layout from '../Layouts/Layout'
-import style from './components/Layout/layout.module.css'
-import RestoSearchCard from './components/Layout/RestoSearchCard'
+import style from '../components/Layout/layout.module.css'
+import RestoSearchCard from '../components/Layout/RestoSearchCard'
 import Pagination from 'react-bootstrap/Pagination'
 import LayoutAuth from '../Layouts/LayoutAuth'
 

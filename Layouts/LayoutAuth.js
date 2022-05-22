@@ -1,6 +1,6 @@
 import React from 'react'
-import Footer from '../pages/components/Layout/Footer'
-import Navigation from '../pages/components/Layout/Navigation'
+import Footer from '../components/Layout/Footer'
+import Navigation from '../components/Layout/Navigation'
 import MainContent from './MainContent'
 
 const LayoutAuth = (props) => {

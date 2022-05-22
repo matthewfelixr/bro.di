@@ -1,5 +1,5 @@
 import React from 'react'
-import style from './components/Layout/layout.module.css'
+import style from '../components/Layout/layout.module.css'
 import Layout from '../Layouts/Layout'
 import Image from 'next/image'
 import Successpic from '../public/success.png'

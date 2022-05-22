@@ -1,12 +1,12 @@
 // import React from 'react'
 // import LayoutAuth from '../Layouts/LayoutAuth'
-// import style from './components/Layout/layout.module.css'
+// import style from '../components/Layout/layout.module.css'
 // import Image from 'next/image'
 // import solaria from '../public/solaria.png'
 // import imgtemp from '../public/imgtemp.png'
 // import Link from 'next/link'
-// import Tabs from './components/Layout/Tabs'
-// import withUtils from './components/Layout/withUtils/withUtils'
+// import Tabs from '../components/Layout/Tabs'
+// import withUtils from '../components/Layout/withUtils/withUtils'
 // const Restodetail = () => {
 //   return (
 //     <LayoutAuth>

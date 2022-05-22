@@ -1,6 +1,6 @@
 import React from 'react'
 import { Form } from 'react-bootstrap'
-import style from './components/Layout/layout.module.css'
+import style from '../components/Layout/layout.module.css'
 import Layout from '../Layouts/Layout'
 import Link from 'next/link'
 

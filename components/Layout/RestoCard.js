@@ -2,7 +2,7 @@ import React, { useEffect, useState } from 'react'
 import Link from 'next/link'
 import  style from './layout.module.css'
 import Image from 'next/image'
-import Rating from  '../../../public/rating.png'
+import Rating from  '../../public/rating.png'
 
 const RestoCard = () => {
   // const [resto,setResto] = useState();

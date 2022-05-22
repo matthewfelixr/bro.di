@@ -1,14 +1,14 @@
 import React from 'react'
 import style from './layout.module.css'
 import Image from 'next/image'
-import sushitei from '../../../public/sushitei.png'
-import solaria from '../../../public/solaria.png'
-import marudon from '../../../public/marudon.png'
-import yoshinoya from '../../../public/yoshinoya.png'
-import pelunch from '../../../public/pelunch.png'
-import bakmigm from '../../../public/bakmigm.png'
-import aw from '../../../public/aw.png'
-import kafbet from '../../../public/kafebetawi.png'
+import sushitei from '../../public/sushitei.png'
+import solaria from '../../public/solaria.png'
+import marudon from '../../public/marudon.png'
+import yoshinoya from '../../public/yoshinoya.png'
+import pelunch from '../../public/pelunch.png'
+import bakmigm from '../../public/bakmigm.png'
+import aw from '../../public/aw.png'
+import kafbet from '../../public/kafebetawi.png'
 
 const MitraKami = () => {
   return (

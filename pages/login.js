@@ -1,6 +1,6 @@
 import React,{useState, useEffect} from 'react'
 import Link from 'next/link'
-import style from './components/Layout/layout.module.css'
+import style from '../components/Layout/layout.module.css'
 import Layout from '../Layouts/Layout'
 import Background from '/public/bg_vector.png'
 import { useRouter } from 'next/router'

@@ -1,6 +1,6 @@
 import { useState } from "react";
 import Image from 'next/image'
-import imgtemp from '../../../public/imgtemp.png'
+import imgtemp from '../../public/imgtemp.png'
 // import "./App.css";
 
 function Tabs({namaRestoran,lokasiRestoran,gambarRestoran,gambarMenu}) {

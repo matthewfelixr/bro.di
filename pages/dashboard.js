@@ -1,14 +1,11 @@
 import React from 'react'
-import { Nav } from 'react-bootstrap'
-import HeaderCarousel from './components/Layout/HeaderCarousel'
-import Navigation from './components/Layout/Navigation'
-import RestoCard from './components/Layout/RestoCard'
+import HeaderCarousel from '../components/Layout/HeaderCarousel'
 import dynamic from "next/dynamic";
-import Recommended from './components/Layout/Recommended'
-import RestoranGrid from './components/Layout/RestoranGrid'
+import Recommended from '../components/Layout/Recommended'
+import RestoranGrid from '../components/Layout/RestoranGrid'
 import LayoutAuth from '../Layouts/LayoutAuth'
 import { useRouter} from 'next/router'
-import WithUtils from './components/Layout/WithUtil/withUtils'
+import WithUtils from '../components/Layout/WithUtil/WithUtils'
 
 const Dashboard = () => {
   const router = useRouter();
@@ -31,4 +28,4 @@ const Dashboard = () => {
   }
 
 
-export default Dashboard
+export default WithUtils(Dashboard)
