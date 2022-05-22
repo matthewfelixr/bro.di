@@ -1,11 +1,11 @@
-import { useRouter } from "next/router";
+// import { useRouter } from "next/router";
 import Cookies from "js-cookie";
 import { useEffect } from "react";
 const WithUtils = (WrappedComponent) => {
 
   // eslint-disable-next-line react/display-name
   return (props) => {
-    const Router = useRouter();  
+    // const Router = useRouter();  
     // checks whether we are on client / browser or server.
 
     if (typeof window !== "undefined") {
@@ -16,8 +16,8 @@ const WithUtils = (WrappedComponent) => {
 
       // If there is no access token we redirect to "/" page.
       if (!accessToken) {
-        Router.replace("/login");
-        return null;
+        // Router.replace("/login");
+        return <WrappedComponent {...props} />;
       }
 
       // If this is an accessToken we just render the component that was passed with all its props
@@ -26,7 +26,7 @@ const WithUtils = (WrappedComponent) => {
     }
 
     // If we are on server, return null
-    return null;
+    return <WrappedComponent {...props} />;
   };
 };
 // WithUtils.displayName = 'WithUtils';
