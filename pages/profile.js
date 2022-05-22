@@ -1,14 +1,14 @@
 import React from 'react'
 import { Form } from 'react-bootstrap'
 import style from '../components/Layout/layout.module.css'
-import Layout from '../Layouts/Layout'
 import WithUtils from '../components/Layout/WithUtil/WithUtils'
-// import Link from 'next/link'
+import LayoutAuth from '../Layouts/LayoutAuth'
+import Link from 'next/link'
 
 const Profile = () => {
   return (
     <div className={style.body}>
-        <Layout>
+        <LayoutAuth>
             <div className={style.profile_container}>
             <h2 className={`${style.form_title} ${'text-center'}`}><b> Profile </b></h2>
             <Form className={style.form_container}> 
@@ -30,9 +30,14 @@ const Profile = () => {
                 <div className='d-grid gap-2'>
                     <button className={`${style.button_sub_profile} ${"flex-grow-1 px-6"}`}type="submit">Edit Profile</button>
                 </div>
+                <div className='d-grid gap-2'>
+                    <Link href="/">
+                        <button className={`${style.button_sub_signup} ${"flex-grow-1 px-6"}`}type="submit">Sign Out</button>
+                    </Link>
+                </div>
             </Form>
             </div>
-        </Layout>
+        </LayoutAuth>
     </div>
   )
 }
