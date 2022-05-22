@@ -1,12 +1,16 @@
 import { useRouter } from "next/router";
 import Cookies from "js-cookie";
-const WithUtils = (WrappedComponent) => {
+const withUtils = (WrappedComponent) => {
 
   // eslint-disable-next-line react/display-name
   return (props) => {
+    const Router = useRouter();
     // checks whether we are on client / browser or server.
+
     if (typeof window !== "undefined") {
-      const Router = useRouter(); 
+        
+
+
       const accessToken = Cookies.get("jwt");
 
       // If there is no access token we redirect to "/" page.
@@ -24,5 +28,5 @@ const WithUtils = (WrappedComponent) => {
     return null;
   };
 };
-WithUtils.displayName = 'WithUtils';
-export default WithUtils;
+// WithUtils.displayName = 'WithUtils';
+export default withUtils;

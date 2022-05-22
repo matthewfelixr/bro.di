@@ -3,7 +3,7 @@ import Layout from '../Layouts/Layout'
 import LayoutAuth from '../Layouts/LayoutAuth'
 import ReservedCard from './components/Layout/ReservedCard'
 import style from './components/Layout/layout.module.css'
-import WithUtils from './components/Layout/WithUtil/WithUtils'
+import WithUtils from './components/Layout/WithUtil/withUtils'
 
 const reserved = () => {
   return (

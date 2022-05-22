@@ -1,4 +1,4 @@
-import React from 'react'
+// import React from 'react'
 import { useRouter } from "next/router";
 // import axios from 'axios';  
 import LayoutAuth from '../../Layouts/LayoutAuth'
@@ -9,7 +9,7 @@ import solaria from '../../public/solaria.png'
 import Link from 'next/link'
 import Tabs from '../components/Layout/Tabs'
 // import { useParams } from 'react-router';
-import WithUtils from '../components/Layout/WithUtil/WithUtils';
+import WithUtils from '../components/Layout/WithUtil/withUtils';
 const RestoDetail = ({restoran}) => {
 
     // const param = useParams()
@@ -73,8 +73,8 @@ const RestoDetail = ({restoran}) => {
     </LayoutAuth>
   )
 }
-export async function getServerSideProps(context){
-  const restoran = await fetch(`https://brodi-db.herokuapp.com/api/v1/restaurant/${context.params.id}`)
+export async function getServerSideProps(ctx){
+  const restoran = await fetch(`https://brodi-db.herokuapp.com/api/v1/restaurant/${ctx.params.id}`)
       .then(res=> res.json());
   
   return{
@@ -85,4 +85,4 @@ export async function getServerSideProps(context){
   
 
 }
-export default WithUtils(RestoDetail)
+export default RestoDetail

@@ -6,7 +6,7 @@ import Layout from '../../Layouts/Layout'
 import Link from 'next/link'
 import axios from 'axios';
 import Cookies from 'js-cookie'
-import WithUtils from '../components/Layout/WithUtil/WithUtils';
+import WithUtils from '../components/Layout/WithUtil/withUtils';
 
 const Booking = ({restoran,meja}) => {
     // const [restoran,setRestoran] = useState()
@@ -45,10 +45,12 @@ const Booking = ({restoran,meja}) => {
 
           axios.post("http://localhost:5000/api/v1/order/create",order)
           .then((res)=>{
-
+            console.log(res)
             
           })
-
+          .catch((err)=>{
+              console.log(err)
+          })
       }
   return (
     <>
@@ -178,4 +180,4 @@ export async function getServerSideProps(context){
     
   
   }
-export default WithUtils(Booking)
+export default Booking
