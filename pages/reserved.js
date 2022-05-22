@@ -4,11 +4,11 @@ import LayoutAuth from '../Layouts/LayoutAuth'
 import ReservedCard from '../components/Layout/ReservedCard'
 import style from '../components/Layout/layout.module.css'
 import WithUtils from '../components/Layout/WithUtil/WithUtils'
-import jsCookie from 'js-cookie'
+// import jsCookie from 'js-cookie'
 
 const Reserved = () => {
 
-    const idUser = Cookies.get("userId");
+    // const idUser = Cookies.get("userId");
   return (
     <LayoutAuth>
         <div className='container mt-5 mb-5'>
