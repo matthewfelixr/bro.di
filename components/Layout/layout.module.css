@@ -372,6 +372,12 @@ grid-column : 3/5 ;
     margin-right: 0;
     font-size: 40px;
 }
+.owl_text{
+    font-weight: 700 !important;
+    color: #781D42;
+    margin-left: 0;
+    margin-right: 0;
+}
 .owl_container{
     width :1520px !important;
 }

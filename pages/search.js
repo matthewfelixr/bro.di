@@ -5,23 +5,41 @@ import RestoSearchCard from '../components/Layout/RestoSearchCard'
 import Pagination from 'react-bootstrap/Pagination'
 import LayoutAuth from '../Layouts/LayoutAuth'
 
-const search = () => {
+const search = ({restoran}) => {
   return (
     <>
         <LayoutAuth>
             <div className={style.search_header}>
-                <h1>Result of Solaria</h1>
+                <h1>Restaurant List</h1>
                 <br></br>
                 <br></br>
             </div>
-            <RestoSearchCard/>
-            <RestoSearchCard/>
-            <RestoSearchCard/>
-            <RestoSearchCard/>
-            <RestoSearchCard/>
+            {restoran.map(resto=>(
+  
+  <RestoSearchCard
+    key={resto.id}
+    namaRestoran={resto.namaRestoran}
+    lokasiRestoran={resto.lokasiRestoran}
+    id={resto.id}
+    gambarRestoran={resto.gambarRestoran}
+  />
+
+  ))}
+
         </LayoutAuth>
     </>
   )
+}
+export async function getStaticProps(){
+  const restoran = await fetch('https://brodi-db.herokuapp.com/api/v1/restaurant/all')
+      .then(res=> res.json());
+  return{
+      props: {
+          restoran:restoran.data,
+      }
+  }
+  
+
 }
 
 export default search

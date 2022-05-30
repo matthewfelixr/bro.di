@@ -13,6 +13,7 @@ const Recommended = () => {
     <>
     <div className={'container mt-5 pt-5'}>
     <h1 className={style.owl_title}>Recommended</h1>
+    <h5 className={style.owl_text}> Currently Unavailable</h5>
     <hr></hr>
     <OwlCarousel>
     <div className={style.item}><RestoCard/></div>
@@ -24,6 +25,7 @@ const Recommended = () => {
     </div>
     <div className={'container mt-3 pt-3'}>
     <h1 className={style.owl_title}>Indonesian Restaurant</h1>
+    <h5 className={style.owl_text}> Currently Unavailable</h5>
     <hr></hr>
     <OwlCarousel>
     <div className={style.item}><RestoCard/></div>

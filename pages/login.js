@@ -67,6 +67,7 @@ const Login = () => {
                 value={email}
                 onChange={(e) => setEmail(e.target.value)}
                 className={style.form_input}
+                required
             />
             <label className={style.form_label} >Password</label>
             <input
@@ -75,6 +76,7 @@ const Login = () => {
                 value={password}
                 onChange={(e) => setPassword(e.target.value)}
                 className={style.form_input}
+                required
             />
 
                 <div className='d-grid gap-2 mt-2'>

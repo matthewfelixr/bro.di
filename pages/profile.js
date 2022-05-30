@@ -4,6 +4,7 @@ import style from '../components/Layout/layout.module.css'
 import WithUtils from '../components/Layout/WithUtil/WithUtils'
 import LayoutAuth from '../Layouts/LayoutAuth'
 import Link from 'next/link'
+import Cookies from 'js-cookie'
 
 const Profile = () => {
   return (
@@ -32,7 +33,7 @@ const Profile = () => {
                 </div>
                 <div className='d-grid gap-2'>
                     <Link href="/">
-                        <button className={`${style.button_sub_signup} ${"flex-grow-1 px-6"}`}type="submit">Sign Out</button>
+                        <button className={`${style.button_sub_signup} ${"flex-grow-1 px-6"}`}type="submit" onClick={()=>{Cookies.remove('jwt')}}>Sign Out</button>
                     </Link>
                 </div>
             </Form>
