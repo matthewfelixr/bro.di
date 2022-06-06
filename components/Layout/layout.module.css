@@ -28,10 +28,11 @@
 
 .body {
     position: absolute;
-    width: 100vw;
+    min-width: 100vw ;
     height: fit-content;
     background-size:contain;
     background-image: url(../../public/bg_vector.png);
+    min-height: 100vh;
 
 }
 .btn_login{
@@ -140,6 +141,22 @@
     text-align: center;
     padding-top: 5px;
     width: 430px;
+    margin: auto;
+    margin-bottom: 10px;
+    border: unset;
+    border: #781D42 2px;
+}
+.button_member{
+    align-items: center;
+    justify-content: center;
+    height: 40px;
+    font-size: 18px;
+    color: white;
+    background-color: #781D42;
+    border-radius: 38px;
+    text-align: center;
+    padding-top: 5px;
+    width: 200px;
     margin: auto;
     margin-bottom: 10px;
     border: unset;
@@ -279,7 +296,7 @@
 /* Footer CSS */
 .footer {
     position: relative;
-    bottom: 0%;
+    bottom: 0;
     height: 450px;
     background: #781D42;
     display: flex;

@@ -10,7 +10,7 @@ const AboutUs = () => {
             <div className={`${style.col_about} ${"col"}`}>
                 <h1>bro.di</h1>
                 <p>bro.di (Booking Restoran Online di Indonesia) adalah sebuah web untuk kamu yang ingin reservasi bangku restoran lebih mudah, cepat, dan praktis. </p>
-                <Link href="/"><button>About Us</button></Link>
+                <Link href="/about"><button>About Us</button></Link>
             </div>
             <div className={`${style.col_about_image} ${"col"}`}>
                 <Image
